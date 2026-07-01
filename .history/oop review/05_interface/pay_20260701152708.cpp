@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Ipayment
+{
+private:
+public:
+    virtual void pay(int amount) = 0;
+};
+
+class CreditCard : public Ipayment
+{
+private:
+public:
+    void pay(int amount) override
+    {
+        cout << "pay with creditCard" << endl;
+    }
+};
+class PayPal
+{
+
+private:
+public:
+    cout<<"pay with payPal"<<endl;
+};
+class Cash
+{
+private:
+public:
+};
